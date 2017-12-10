@@ -1,0 +1,19 @@
+/**
+ * Client.java
+ */
+public class Client {
+ 
+	public static void main(String[] args) {
+ 
+		// Erzeugung des Subjektes
+		Heizung hz = new Heizung();
+ 
+		// Erzeugung des Beobachters. Dabei wird
+		// das Subjekt übergeben und registriert.
+		Hausmeister hm = new Hausmeister(hz);
+ 
+		// Zustandsänderung, Subjekt benachrichtigt
+		// daraufhin die Beobachter
+		Heizung.setState(1);
+	}
+}

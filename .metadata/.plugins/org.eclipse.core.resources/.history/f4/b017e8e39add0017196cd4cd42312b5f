@@ -1,0 +1,16 @@
+
+public class Hausmeister implements IHeizObserver{
+
+	@Override
+	public void aboEntfernen(IBeobachter beob) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void aboHinzufuegen(IBeobachter beob) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+
+public class Hausverwaltung implements IHeizObserver {
+
+	@Override
+	public void notifyAll() {
+		// TODO Auto-generated method stub
+		
+		
+		System.out.println("Ich bin die Hausverwaltung und mache ein Update!");
+		
+	}
+
+	@Override
+	public void aboEntfernen() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void aboHinzuf() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

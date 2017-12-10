@@ -1,0 +1,62 @@
+import java.util.ArrayList;
+// main: sollte heizwert verändern, davor aber objekte instanzieren zB heizung, 
+// hausverwalutung und meister, 
+//hausverwalter muss bei heizung mit sich subscribe
+public class Heizung {
+
+	private static float temp= 21;
+
+	static ArrayList<IHeizObserver> observ =  new ArrayList<IHeizObserver>(); 
+
+
+	public float getHeizWert(){
+		return temp;
+	}
+
+	public static void setHeizWert(float t){
+		temp =+ t; 
+		System.out.println("Heizwert wird um "+t+" erhöht, beträgt nun: "+temp);
+		informAll();
+	}
+
+	public static void subscribe(IHeizObserver obs){
+		//arraylist obj hinzufügen
+		System.out.println("Subscribe von: "+ obs);
+		observ.add(obs);
+	}
+
+	public static void unsubscribe(IHeizObserver obs ){
+		//arraylist obj löschen
+		System.out.println("Unsubscribe von: "+ obs);
+		observ.remove(obs);
+	}
+
+	private static void informAll(){
+		//geht arraylist durch und führt bei jeder update durch , sobald set temp aufgerufen wurde
+		for(int i = 0; i < observ.size() ; i ++){
+			observ.get(i).update();
+			System.out.println("Informall wurde ausgeführt!");
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Hausverwaltung hv1 = new Hausverwaltung();
+		Hausmeister hm1 = new Hausmeister();
+
+		getHeizWert();
+		setHeizWert(20);
+		
+		subscribe(hv1);
+		subscribe(hm1);
+		
+		hv1.update();
+		hm1.update();
+		
+		setHeizWert(25);
+
+		
+		
+	}
+
+}
