@@ -7,12 +7,17 @@ public class Main {
 
 		Heizung hz = new Heizung();
 
-		/** Erzeugung des Beobachters. Dabei wird
-		 * das Subjekt übergeben und registriert. **/
+		/** Beobachter wird erzeugt und bekommt gleich zu beobachtendes Objekt mit **/
+		
 		Hausmeister hm = new Hausmeister(hz);
+		Hausverwaltung hv = new Hausverwaltung(hz);
 
-		/** Zustandsänderung, Subjekt benachrichtigt
-		 * daraufhin die Beobachter **/
-		Heizung.setHeizWert(21);
+		System.out.println("---");
+		
+		/** Heizwert wird gesetzt und gibt gleich Nachricht darüber weiter **/
+		hz.getHeizWert();
+		
+		hz.setHeizWert(3);
+
 	}
 }

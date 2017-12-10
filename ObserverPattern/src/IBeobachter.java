@@ -1,6 +1,11 @@
+/**
+ * Stellt Objekt dar, welches Beobachtet 
+ * @author Sara
+ *
+ */
 
 public interface IBeobachter {
 	
-	public abstract void update();
+	public void update();
 
 }

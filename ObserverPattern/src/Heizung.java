@@ -1,13 +1,10 @@
 import java.util.ArrayList;
-// main: sollte heizwert verändern, davor aber objekte instanzieren zB heizung, 
-// hausverwalutung und meister, 
-//hausverwalter muss bei heizung mit sich subscribe
+
 public class Heizung implements IHeizObserver{
 
-	private int temp= 21;
-
+	double temp= 21;
 	ArrayList<IBeobachter> beobachterL =  new ArrayList<IBeobachter>(); 
-
+	
 	@Override
 	public void aboHinzufuegen(IBeobachter beobachter) {
 		this.beobachterL.add(beobachter);
@@ -24,14 +21,14 @@ public class Heizung implements IHeizObserver{
 		}
 	}	
 
-	public int getHeizWert(){
-		System.out.println("Heizwert beträgt: " +temp +" °C");
+	public double getHeizWert(){
+		System.out.println("GET: Heizwert beträgt: " +temp +" °C");
 		return temp;
 	}
 
-	public void setHeizWert(int t){
-		this.temp = t; 
-		System.out.println("Heizwert wird um "+t+" erhöht/vermindert, beträgt nun: "+getHeizWert()+" °C");
+	public void setHeizWert(double t){
+		this.temp = temp +  t; 
+		System.out.println("SET: Heizwert wurde auf: "+getHeizWert()+" °C"+" geändert");
 		this.notifyBeobachter();
 	}
 

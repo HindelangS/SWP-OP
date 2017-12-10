@@ -1,17 +1,14 @@
 /**
- * Beobachtet ein anderes Elment, wenn etwas passiert wird reagiert
- * zB bei Notengebung  
- * @author Sara
- * Inerface beinhaltet Methode die bei Update ausgeführt wird, meist subscribed und unsubscribed 
- *
+ * Stellt Objekt dar, welches Beobachtet wird, kann entwerder Beobachter hinzufügen, entfernen oder benachrichtigens
+ * @author Sara *
  */
 public interface IHeizObserver {
 	
-	public abstract void aboEntfernen(IBeobachter beob);
+	public void aboEntfernen(IBeobachter beob);
 	
-	public abstract void aboHinzufuegen(IBeobachter beob);
+	public void aboHinzufuegen(IBeobachter beob);
 	
-	public abstract void notifyBeobachter();
+	public void notifyBeobachter();
 	
 
 }

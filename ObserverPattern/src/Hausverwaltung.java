@@ -4,14 +4,17 @@ public class Hausverwaltung implements IBeobachter {
 	private Heizung hz;
 
 	public Hausverwaltung(Heizung z) {
-		this.hz= z; 
-		this.hz.aboHinzufuegen(this);
+
+		System.out.println("Ich bin die Hausverwaltung und wurde soeben erstellt");
+		hz = z; 
+		z.aboHinzufuegen(this);
 	}
 	
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-		int newTemp = Heizung.getHeizWert();
+		System.out.print("UPDATE: ");
+		double newTemp = hz.getHeizWert();
 		
 	}
 	
