@@ -13,7 +13,7 @@ public class Hausverwaltung implements IBeobachter {
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-		System.out.print("UPDATE: ");
+		System.out.print("UPDATE -> ");
 		double newTemp = hz.getHeizWert();
 		
 	}

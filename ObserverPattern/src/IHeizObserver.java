@@ -1,6 +1,6 @@
 /**
  * Stellt Objekt dar, welches Beobachtet wird, kann entwerder Beobachter hinzufügen, entfernen oder benachrichtigens
- * @author Sara *
+ * @author Sara 
  */
 public interface IHeizObserver {
 	

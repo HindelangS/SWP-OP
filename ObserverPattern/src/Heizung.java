@@ -28,7 +28,7 @@ public class Heizung implements IHeizObserver{
 
 	public void setHeizWert(double t){
 		this.temp = temp +  t; 
-		System.out.println("SET: Heizwert wurde auf: "+getHeizWert()+" °C"+" geändert");
+		System.out.println("SET: Heizwert wurde auf: "+getHeizWert()+" °C geändert");
 		this.notifyBeobachter();
 	}
 

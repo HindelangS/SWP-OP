@@ -16,7 +16,7 @@ public class Main {
 		
 		/** Heizwert wird gesetzt und gibt gleich Nachricht darüber weiter **/
 		hz.getHeizWert();
-		
+		System.out.println("--");
 		hz.setHeizWert(3);
 
 	}

@@ -8,7 +8,9 @@
 public class Singleton {
 
 	private static Singleton instance = null;
-	private Singleton(){	}
+	
+//	private Singleton(){	} //für wat
+	
 	private static int id=0;
 
 	public static Singleton instance (){
@@ -19,10 +21,11 @@ public class Singleton {
 			System.out.println("neuer Singleton wurde erstellt ( ID: "+id+")");
 		}
 		else{
-			System.out.println("es wurde bereites ein Singleton erstellt ( ID: "+id+")");
+			System.out.println("Achtung, es wurde bereites ein Singleton erstellt ( ID: "+id+")");
 		}
 		return instance;
 	}
+	
 	public static void main(String[] args) {
 
 		Singleton.instance();

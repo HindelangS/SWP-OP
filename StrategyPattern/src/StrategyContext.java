@@ -4,9 +4,9 @@ public class StrategyContext {
 	
 	private Istrategy strategy;
 	
-	public void SetStrategy (Istrategy strategy)
+	public void setStrategy (Istrategy strategy)
 	{
-		this.strategy=strategy;
+		this.strategy = strategy;
 	}
 	
 	public void executeStrategy(ArrayList<String> files)

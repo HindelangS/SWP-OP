@@ -4,6 +4,6 @@ public class StrategyZip implements Istrategy{
 
 	public void compress(ArrayList<String> files)
 	{
-		System.out.println("Compressing with ZIP ");
+		System.out.println("Compressing with ZIP: "+ files);
 	}
 }
