@@ -6,6 +6,5 @@ public class Zutat {
 	public Zutat(String ding) {
 		
 		this.ding = ding; 
-	}
-	
+	}	
 }

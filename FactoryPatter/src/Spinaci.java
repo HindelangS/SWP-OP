@@ -29,7 +29,7 @@ public class Spinaci implements IPizza {
 				System.out.println("Folgende Pizza 'Spinaci' Zutaten werden hergeholt: ");
 				
 				for(int i = 0; i < zutaten.size(); i ++) {
-					System.out.println("\t "+i+": "+zutaten.get(i).ding);
+					System.out.println("\t "+(i+1)+": "+zutaten.get(i).ding);
 				}
 				return zutaten;		
 	}

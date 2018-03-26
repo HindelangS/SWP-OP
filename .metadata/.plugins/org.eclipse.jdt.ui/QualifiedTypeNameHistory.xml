@@ -2,7 +2,12 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="Heizung"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="IPizza"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.Composite"/>
+<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="CompositUntersuchung"/>
+<fullyQualifiedTypeName name="Fiebermessen"/>
+<fullyQualifiedTypeName name="Blutdruckmessen"/>
 </qualifiedTypeNameHistroy>

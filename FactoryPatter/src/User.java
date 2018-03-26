@@ -27,7 +27,7 @@ public class User /*verwendet iPizza und called Facgory*/{
 			pizzaS.getZutaten();
 			pizzaS.zubereitung();
 		}else {
-			System.out.println("--- DIESE PIZZA IST NICHT VERFÜGBAR, BITTE ANDERE WÄHLEN ---");
+			System.out.println("--- DIESE PIZZA ' "+ pizzaS +" ' IST NICHT VERFÜGBAR, BITTE ANDERE WÄHLEN ---");
 		}
 		
 		System.out.println("--- bitte holen Sie Ihre Bestellung ab ---");
@@ -47,7 +47,7 @@ public class User /*verwendet iPizza und called Facgory*/{
 			pizzaka.getZutaten();
 			pizzaka.zubereitung();
 		}else {
-			System.out.println("--- Achtung.. DIESE PIZZA IST NICHT VERFÜGBAR, BITTE ANDERE WÄHLEN ---");
+			System.out.println("--- Achtung.. DIESE PIZZA+ ' "+pizzaka+" 'IST NICHT VERFÜGBAR, BITTE ANDERE WÄHLEN ---");
 		}
 		
 		System.out.println();
