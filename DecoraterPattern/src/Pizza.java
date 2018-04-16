@@ -1,13 +1,10 @@
-
 public abstract class Pizza {
 
 	String beschreibung; 
 	
 	String getBeschreibung(){
-		return this.beschreibung; 
+		return beschreibung; 
 	}
 	
-	float preis() {
-		return 4.99f;
-	}
+	public abstract float preis();
 }
