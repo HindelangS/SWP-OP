@@ -21,7 +21,6 @@ public class Main {
 		ordnerMain.addChild(unterOrdner);
 		
 		System.out.println("Der Inhalt des Unterordners1 beträgt: "+ unterOrdner.getAnzInhalt());
-
 		System.out.println("Der Inhalt des gesamten Ordners beträgt: "+ ordnerMain.getAnzInhalt());
 		 	
 	}
